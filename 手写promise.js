@@ -105,4 +105,5 @@ function resolvePromise(x, resolve, reject) {
 
 module.exports = MyPromise;
 
+
 //https://juejin.cn/post/6945319439772434469#heading-27

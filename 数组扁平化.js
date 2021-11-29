@@ -23,7 +23,6 @@ let arr = [1, [2, [3]]];
 
 function flatten2(arr) {
   while (arr.some((item) => Array.isArray(item))) {
-    console.log(arr);
     arr = [].concat(...arr);
   }
   return arr;

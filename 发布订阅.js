@@ -16,8 +16,8 @@ class Observe {
   emit(name, data) {
     let cache = this.event.get(name);
     if (cache) {
-      if (cache.isOnce) cache.delete(name);
-      cache.fn(data);
+      if (cache.isOnce) this.event.delete(name);
+      cache.fn(data); 
     }
   }
 }

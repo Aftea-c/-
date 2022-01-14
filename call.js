@@ -19,7 +19,6 @@ Function.prototype.myCall = function (context) {
   return result;
 };
 
-
 function sayWord() {
   var talk = [this.name, "say", this.word].join(" ");
   console.log(talk);
@@ -27,5 +26,7 @@ function sayWord() {
 var bottle = {
   name: "bottle",
   word: "hello",
+  //相当于
+  fn: function sayWord() {},
 };
 sayWord.myCall(bottle);
